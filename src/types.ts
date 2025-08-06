@@ -3,7 +3,7 @@ import type { Options as CorsOptions } from '@koa/cors'
 export interface KoaMockOptions {
   /**
    * The dir for mock APIs.
-   * @default './mock'
+   * @default 'mock'
    */
   mockDir?: string
 

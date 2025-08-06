@@ -1,6 +1,6 @@
 {
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -9,6 +9,6 @@
   "devDependencies": {
     "typescript": "^4.9.5",
     "vite": "^4.2.1",
-    "vite-plugin-koa-mock": "^0.9.9"
+    "vite-plugin-koa-mock": "file:../../vite-plugin-koa-mock"
   }
 }
