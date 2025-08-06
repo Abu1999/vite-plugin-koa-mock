@@ -1,15 +1,15 @@
 {
-  "name": "vite-plugin-koa-mock",
+  "name": "vite-plugin-koa-mocks",
   "type": "module",
-  "version": "0.10.1",
-  "packageManager": "pnpm@7.30.0",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.0",
   "description": "Serve mock API with Koa.js in Vite projects.",
-  "author": "mys1024",
+  "author": "Abu1999",
   "license": "MIT",
-  "homepage": "https://github.com/mys1024/vite-plugin-koa-mock#readme",
+  "homepage": "https://github.com/Abu1999/vite-plugin-koa-mock#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mys1024/vite-plugin-koa-mock.git"
+    "url": "https://github.com/Abu1999/vite-plugin-koa-mock.git"
   },
   "keywords": [
     "vite",

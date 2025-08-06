@@ -5,9 +5,6 @@ import KoaMock from '../src/index'
 export default defineConfig({
   plugins: [
     KoaMock({
-      port: 7878,
-      mockDir: 'src/mocks',
-      proxyKeys: ['/api'],
     }),
   ],
 })

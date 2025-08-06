@@ -29,8 +29,8 @@ async function createPlugin(options: KoaMockOptions = {}): Promise<Plugin> {
   // options
   const {
     mockDir = 'mocks',
-    port,
-    proxyKeys = ['/api'],
+    port = 9719,
+    proxyKeys = ['/mock'],
     logger: enableLogger = true,
     cors: enableCors = true,
     bodyParser: enableBodyParser = true,
@@ -39,7 +39,7 @@ async function createPlugin(options: KoaMockOptions = {}): Promise<Plugin> {
   // enabled only in development mode
   if (process.env.NODE_ENV !== 'development') {
     return {
-      name: 'vite-plugin-koa-mock',
+      name: 'vite-plugin-koa-mocks',
       apply: () => false,
     }
   }
@@ -139,7 +139,7 @@ async function createPlugin(options: KoaMockOptions = {}): Promise<Plugin> {
 
   // return the plugin
   return {
-    name: 'vite-plugin-koa-mock',
+    name: 'vite-plugin-koa-mocks',
     apply: 'serve',
     config: () => ({
       server: {
