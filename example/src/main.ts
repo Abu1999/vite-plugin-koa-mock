@@ -2,7 +2,7 @@ const app = document.querySelector<HTMLDivElement>('#app') as HTMLDivElement
 
 app.innerHTML = '<div></div>'
 
-setTimeout(async () => {
+setInterval(async () => {
   const res = await fetch('/mock/foo')
   const child = document.createElement('p')
   child.innerText = await res.text()

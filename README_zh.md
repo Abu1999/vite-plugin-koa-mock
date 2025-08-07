@@ -1,18 +1,18 @@
 # vite-plugin-koa-mocks
 
-[![npm-version](https://img.shields.io/npm/v/vite-plugin-koa-mock?style=flat-square&color=%23cb3837)](https://www.npmjs.com/package/vite-plugin-koa-mock)
-[![license](https://img.shields.io/github/license/Abu1999/vite-plugin-koa-mock?&style=flat-square)](./LICENSE)
+[![npm-version](https://img.shields.io/npm/v/vite-plugin-koa-mocks?style=flat-square&color=%23cb3837)](https://www.npmjs.com/package/vite-plugin-koa-mocks)
+[![license](https://img.shields.io/github/license/Abu1999/vite-plugin-koa-mocks?&style=flat-square)](./LICENSE)
 
 [English](./README.md) | 中文
 
 使用 **Koa.js** 为你的 **Vite** 项目提供模拟接口。
 
-![logger](https://raw.githubusercontent.com/Abu1999/vite-plugin-koa-mock/main/images/cover.png)
+![logger](https://raw.githubusercontent.com/Abu1999/vite-plugin-koa-mocks/main/images/cover.png)
 
 ## 安装
 
 ```shell
-npm install -D vite-plugin-koa-mock
+npm install -D vite-plugin-koa-mocks
 ```
 
 ## 用法
@@ -21,7 +21,7 @@ npm install -D vite-plugin-koa-mock
 
 ```javascript
 import { defineConfig } from 'vite'
-import KoaMock from 'vite-plugin-koa-mock'
+import KoaMock from 'vite-plugin-koa-mocks'
 
 export default defineConfig({
   plugins: [
@@ -36,7 +36,7 @@ export default defineConfig({
 创建 `mock/*.js` 或 `mock/*.ts`，并编写你的模拟接口：
 
 ```javascript
-import { Router } from 'vite-plugin-koa-mock'
+import { Router } from 'vite-plugin-koa-mocks'
 
 export const router = new Router()
 
@@ -57,7 +57,7 @@ import type { Options as CorsOptions } from '@koa/cors'
 export interface KoaMockOptions {
   /**
    * The dir for mock APIs.
-   * @default './mock'
+   * @default 'mocks'
    */
   mockDir?: string
 
@@ -70,7 +70,7 @@ export interface KoaMockOptions {
   /**
    * Keys for Vite's configuration `server.proxy`.
    * @see https://vitejs.dev/config/server-options.html#server-proxy
-   * @default ['/api']
+   * @default ['/mock']
    */
   proxyKeys?: string[]
 

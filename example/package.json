@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "typescript": "^4.9.5",
-    "vite": "^4.2.1",
-    "vite-plugin-koa-mock": "file:../../vite-plugin-koa-mock"
+    "vite": "^4.2.1"
   }
 }

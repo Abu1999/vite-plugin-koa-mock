@@ -6,10 +6,10 @@
   "description": "Serve mock API with Koa.js in Vite projects.",
   "author": "Abu1999",
   "license": "MIT",
-  "homepage": "https://github.com/Abu1999/vite-plugin-koa-mock#readme",
+  "homepage": "https://github.com/Abu1999/vite-plugin-koa-mocks#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Abu1999/vite-plugin-koa-mock.git"
+    "url": "https://github.com/Abu1999/vite-plugin-koa-mocks.git"
   },
   "keywords": [
     "vite",
